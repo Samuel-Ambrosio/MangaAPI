@@ -11,6 +11,10 @@ router.post('/', function(req, res) {
         title: {
             selector: '.story-info-right h1'
         },
+        image: {
+            selector: '.panel-story-info .img-loading',
+            attr: 'src'
+        },
         author: {
             selector: '.story-info-right .variations-tableInfo .table-value',
             eq: 1
